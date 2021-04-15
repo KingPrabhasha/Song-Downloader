@@ -81,12 +81,12 @@ async def song(client, message):
     #if args.startswith("/help"):
         #return ""    
     status = await message.reply(
-             text="<b>Downloading your song, Plz wait 🥺\n\nMade by @GalaxyLanka 🇱🇰</b>",
+             text="<b>Downloading your song, Plz wait 😉 \n\n🎶•••🎵•••🎧•••</b>",
              disable_web_page_preview=True,
                         reply_markup=InlineKeyboardMarkup(
                             [[
                                     InlineKeyboardButton(
-                                        "Developer 👨‍💻", url="https://t.me/Prabha_sha")
+                                        "𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙞𝙣𝙜 •••", url="https://t.me/GalaxyLanka")
                                 ]]
                         ),
                parse_mode="html",
@@ -125,15 +125,16 @@ async def song(client, message):
     user_id = message.from_user["id"]
     args = get_arg(message) + " " + "song"
     if args.startswith(" "):
-        await message.reply("<b>Enter a song name❗\n\nExample: `/s guleba`</b>")
+        await message.reply("<b>Enter a song name❗\n\nExample: `/s Shape of you`</b>")
         return ""
     status = await message.reply(
-             text="<b>Downloading your song, Plz wait 🥺\n\nMade by @GalaxyLanka 🇱🇰</b>",
+             text="<b>Downloading your song, Plz wait... 😉 \n\n🎶•••🎵•••🎧•••</b>",
              disable_web_page_preview=True,
                         reply_markup=InlineKeyboardMarkup(
                             [[
+                             
                                     InlineKeyboardButton(
-                                        "Developer", url="https://t.me/Prabha_sha")
+                                        "𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙞𝙣𝙜 •••", url="https://t.me/Prabha_sha")
                                 ]]
                         ),
                parse_mode="html",
@@ -179,7 +180,7 @@ Hit help button to find out more about how to use me</b>""",
                                         InlineKeyboardButton(
                                             "Help", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Group 🏘", url="https://t.me/GalaxyLanka")
+                                            "Group 🏘", url="https://t.me/HiTechRocket")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -216,7 +217,7 @@ async def help(client, message):
     else:
         await Jebot.send_message(
                chat_id=message.chat.id,
-               text="<b>Song Downloader Help\n\nEnter a song name❗\n\nExample: `/s guleba`</b>",
+               text="<b>Song Downloader Help\n\nEnter a song name 🎶\n\nExample: `/s Shape of you`</b>",
             reply_to_message_id=message.message_id
         )     
         
@@ -232,7 +233,7 @@ print(
     """
 Bot Started!
 
-Join @GalaxyLanka
+Join @HiTechRockets
 """
 )
 
