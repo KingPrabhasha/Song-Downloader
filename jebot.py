@@ -119,7 +119,7 @@ async def song(client, message):
     
     
     
-@Jebot.on_message(filters.command("s"))
+@Jebot.on_message(filters.command("[s],[song],[audio],[music]"))
 async def song(client, message):
     message.chat.id
     user_id = message.from_user["id"]
@@ -134,7 +134,7 @@ async def song(client, message):
                             [[
                              
                                     InlineKeyboardButton(
-                                        "𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙞𝙣𝙜 •••", url="https://t.me/Prabha_sha")
+                                        "𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙞𝙣𝙜 •••", url="https://t.me/Galaxylanka")
                                 ]]
                         ),
                parse_mode="html",
